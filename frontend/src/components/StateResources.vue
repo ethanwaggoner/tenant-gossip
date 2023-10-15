@@ -288,11 +288,11 @@ const filteredCards = computed(() => {
   overflow-y: scroll;
 }
 .card {
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 60vh;
+  height: 30vh;
   padding: 5px;
   color: antiquewhite;
   font-family: Candara, sans-serif;
@@ -304,22 +304,22 @@ const filteredCards = computed(() => {
 }
 
 img {
-  scale: 30%;
+  scale: 40%;
   width: 100%;
-  height: 45%;
+  height: 100%;
   border-radius: 20px;
   object-fit: cover;
   border: #1a1a1a 2px solid;
 }
 
 .links {
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   color: antiquewhite;
-  font-size: 1.2rem;
+  font-size: 16px;
   text-decoration: none;
 }
 a {
