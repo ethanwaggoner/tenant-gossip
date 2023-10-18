@@ -31,6 +31,7 @@ class CategoryService:
         results = []
         for forums_category in forums_categories:
             category_data = {
+                'category_id': forums_category.id,
                 'name': forums_category.name,
                 'description': forums_category.description,
                 'number_of_threads': forums_category.posts.count(),

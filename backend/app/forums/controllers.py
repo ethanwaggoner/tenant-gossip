@@ -3,6 +3,7 @@ from . import api
 from .services import CategoryService, CommentService, PostService
 
 forums_category_list_model = api.model('forums_category_list_model', {
+    'category_id': fields.Integer(required=True, description='ID of the forums category'),
     'name': fields.String(required=True, description='Name of the forums category'),
     'description': fields.String(required=True, description='Description of the forums category'),
     'number_of_threads': fields.Integer(required=True, description='Number of threads in the forums category'),

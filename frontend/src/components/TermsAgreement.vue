@@ -46,7 +46,9 @@
     <router-link to="/" style="text-decoration: none; color: inherit;">
       <div class="back-button">Back</div>
     </router-link>
-    <div class="agree-button">Agree</div>
+    <router-link to="/forums" style="text-decoration: none; color: inherit;">
+      <div class="agree-button">Agree</div>
+    </router-link>
   </div>
 </div>
 </template>
@@ -63,6 +65,7 @@
   height: 90vh;
   background: linear-gradient(180deg, #4FC0D0, #1B6B93);
   border: #1a1a1a 2px solid;
+  border-radius: 5px;
   overflow-y: auto;
 }
 
@@ -76,7 +79,7 @@
   background: linear-gradient(to bottom, #4FC0D0, #1B6B93);
   color: antiquewhite;
   font-size: 24px;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   border-radius: 10px;
   border: #1a1a1a 2px solid;
 }
